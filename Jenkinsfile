@@ -10,7 +10,6 @@ pipeline {
 
         stage('Build the project') {
             steps {
-                checkout scm
                 echo 'Building the application...'
                 bat 'dotnet build'
             }
